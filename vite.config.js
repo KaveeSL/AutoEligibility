@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
+  // Project site is served at https://<user>.github.io/AutoEligibility/
+  // Relative asset URLs keep that path (and local preview) working.
+  base: './',
   plugins: [react(), tailwindcss()],
   build: {
     rollupOptions: {
