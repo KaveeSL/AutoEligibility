@@ -20,7 +20,7 @@ After you fill in the module and upload a spreadsheet, the page shows the studen
 
 ![Filled module details, an uploaded sample file, summary counts, and the data preview](images/02-preview.png)
 
-The sample file in that screenshot has **5** students: **3** eligible and **2** not eligible.
+The sample workbook in that screenshot, `public/sample-eligibility.xlsx`, has **10** students: **6** eligible and **4** not eligible.
 
 ---
 
@@ -58,7 +58,7 @@ The file needs three columns. Header names can vary. AutoEligibility matches sim
 
 Eligibility values are not case-sensitive. Hyphens are treated as spaces, so `not-eligible` and `Not Eligible` both become **Not Eligible**.
 
-A sample file is included in the repository:
+The screenshot above uses the Excel sample at `public/sample-eligibility.xlsx`. A smaller CSV is also included at:
 
 ```text
 public/sample-eligibility.csv

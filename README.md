@@ -8,9 +8,17 @@ Developed under **CODL · UoM**.
 
 **Open the site:** [https://kaveesl.github.io/AutoEligibility/](https://kaveesl.github.io/AutoEligibility/)
 
-Screenshots and a step-by-step walkthrough are in the [user guide](docs/USER_GUIDE.md).
+A separate step-by-step walkthrough is in the [user guide](docs/USER_GUIDE.md). The screenshots below are the full page, including every student row and the summary counts.
 
-![AutoEligibility home page](docs/images/01-home.png)
+![AutoEligibility home page before a file is uploaded](docs/images/01-home.png)
+
+The next screenshot uses `public/sample-eligibility.xlsx` for module **IT1010**, **Introduction to Programming**, **Semester I 2025/2026**.
+
+| Total Students | Eligible | Not Eligible |
+| --- | ---: | ---: |
+| 10 | 6 | 4 |
+
+![Uploaded sample workbook with all 10 students and the eligibility counts](docs/images/02-preview.png)
 
 ---
 
@@ -93,11 +101,26 @@ Hyphens in eligibility values are normalised automatically.
 
 ### Sample file
 
-A sample CSV is included at:
+A dummy Excel workbook is included at:
 
 ```
-public/sample-eligibility.csv
+public/sample-eligibility.xlsx
 ```
+
+| Index No | Name with Initials | Eligibility |
+| --- | --- | --- |
+| 2020/IT/001 | K. Nanayakkara | Eligible |
+| 2020/IT/002 | A. Perera | Not Eligible |
+| 2020/IT/003 | N. Silva | Eligible |
+| 2020/IT/004 | D. Fernando | Eligible |
+| 2020/IT/005 | R. Jayasinghe | Not Eligible |
+| 2020/IT/006 | S. Wijesinghe | Eligible |
+| 2020/IT/007 | M. Bandara | Not Eligible |
+| 2020/IT/008 | P. Gunawardena | Eligible |
+| 2020/IT/009 | H. Rathnayake | Eligible |
+| 2020/IT/010 | T. Karunaratne | Not Eligible |
+
+A smaller CSV sample is also at `public/sample-eligibility.csv`.
 
 ---
 
@@ -197,7 +220,8 @@ Heavy libraries (`xlsx`, `jspdf`) are **lazy-loaded** — they only download whe
 AutoEligibility/
 ├── public/
 │   ├── favicon.svg
-│   └── sample-eligibility.csv
+│   ├── sample-eligibility.csv
+│   └── sample-eligibility.xlsx
 ├── src/
 │   ├── components/
 │   │   ├── Header.jsx          # App header & branding
