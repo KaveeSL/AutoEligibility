@@ -6,6 +6,12 @@ A web-based utility for the **Faculty of Information Technology (External)**, **
 
 Developed under **CODL · UoM**.
 
+**Open the site:** [https://kaveesl.github.io/AutoEligibility/](https://kaveesl.github.io/AutoEligibility/)
+
+Screenshots and a step-by-step walkthrough are in the [user guide](docs/USER_GUIDE.md).
+
+![AutoEligibility home page](docs/images/01-home.png)
+
 ---
 
 ## What is AutoEligibility?
