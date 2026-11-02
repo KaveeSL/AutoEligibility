@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import MetadataForm from './components/MetadataForm'
 import FileUpload from './components/FileUpload'
 import StatsSummary from './components/StatsSummary'
@@ -137,6 +138,8 @@ export default function App() {
           isGenerating={isGenerating}
         />
       </main>
+
+      <Footer />
 
       {toast && <Toast message={toast} onClose={() => setToast(null)} />}
     </div>
